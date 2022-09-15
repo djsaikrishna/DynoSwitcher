@@ -1,4 +1,4 @@
-name: HuzunluArtemis HerokuDynoSwitcher
+name: KelvinCrag HerokuDynoSwitcher
 on:
   schedule:
   - cron: "0 0 1,15 * *"
