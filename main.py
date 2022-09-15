@@ -1,6 +1,3 @@
-# https://github.com/HuzunluArtemis/HerokuDynoSwitcher
-# License: https://github.com/HuzunluArtemis/HerokuDynoSwitcher/blob/main/LICENSE
-
 import time, os, heroku3, requests, datetime
 
 def changeDyno(api, name, islem=0):
@@ -16,7 +13,7 @@ def changeDyno(api, name, islem=0):
         return False
 
 CONFIG_FILE_URL = str(os.environ.get('CONFIG_FILE_URL',""))
-print(f"\n[CHECK] HuzunluArtemis/HerokuDynoSwitcher")
+print(f"\n[CHECK] KelvinCrag/HerokuDynoSwitcher")
 try:
     if len(CONFIG_FILE_URL.strip()) == 0:
         raise TypeError
@@ -69,4 +66,4 @@ for dyno in dynos:
         success += 1
     print(f"\nTotal Process (start, stop) Success: {success} Failed: {failed}")
     time.sleep(5)
-print(f"\nThanks for using HuzunluArtemis/HerokuDynoSwitcher\nTotal Process (start, stop) Success: {success} Failed: {failed}")
+print(f"\nThanks for using KelvinCrag/HerokuDynoSwitcher\nTotal Process (start, stop) Success: {success} Failed: {failed}")
